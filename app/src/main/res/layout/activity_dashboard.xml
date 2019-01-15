@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_two" />
+
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/welcome_text"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome Ashok Babu"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20dp"
+            android:columnCount="2"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/buy_ticket"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Buy Ticket" />
+
+            <Button
+                android:id="@+id/ticket_history"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:ems="1"
+                android:text="Ticket History" />
+
+            <Button
+                android:id="@+id/wallet"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Add Money" />
+
+            <Button
+                android:id="@+id/wallet_balance"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Balance" />
+
+            <Button
+                android:id="@+id/profile"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="My Profile" />
+
+            <Button
+                android:id="@+id/contact_us"
+                style="@style/ButtonTheme"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Contact Us" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

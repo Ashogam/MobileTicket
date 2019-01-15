@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tickets.ScanActivity">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Money"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/current_wallet_amount"
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/input_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/txt_amount"
+                        style="@style/Base.TextAppearance.AppCompat.Display1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:hint="Enter amount"
+                        android:inputType="number"
+                        android:padding="8dp" />
+
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:columnCount="4">
+
+                        <Button
+                            android:id="@+id/btn_100"
+                            style="@style/ButtonTheme"
+                            android:layout_columnWeight="1"
+                            android:ems="1"
+                            android:text="100" />
+
+                        <Button
+                            android:id="@+id/btn_200"
+                            style="@style/ButtonTheme"
+                            android:layout_columnWeight="1"
+                            android:ems="1"
+                            android:text="200" />
+
+                        <Button
+                            android:id="@+id/btn_300"
+                            style="@style/ButtonTheme"
+                            android:layout_columnWeight="1"
+                            android:ems="1"
+                            android:text="300" />
+
+                        <Button
+                            android:id="@+id/btn_400"
+                            style="@style/ButtonTheme"
+                            android:layout_columnWeight="1"
+                            android:ems="1"
+                            android:text="400" />
+
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/transaction_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txt_ticket_count_price"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="left"
+                        android:text="Recent Transaction"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_add_money"
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Money" />
+
+    </LinearLayout>
+
+</RelativeLayout>

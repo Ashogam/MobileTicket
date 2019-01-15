@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "120120049200",
+    "firebase_url": "https://mobileticketing-b179c.firebaseio.com",
+    "project_id": "mobileticketing-b179c",
+    "storage_bucket": "mobileticketing-b179c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120120049200:android:aa197e0263150714",
+        "android_client_info": {
+          "package_name": "com.nira.mobileticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120120049200-9s3daf2kgi5980qkv16h8mn0708h0htl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nira.mobileticket",
+            "certificate_hash": "1e5dfd979941c32167730a803c7c4d5d88a06437"
+          }
+        },
+        {
+          "client_id": "120120049200-vhv3c8cb20afgp34rilk6s1a8g2ogcbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv7w7r8TMzIyYNIDSZe1ltg9sNtnY3p6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120120049200-vhv3c8cb20afgp34rilk6s1a8g2ogcbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
